@@ -8,7 +8,7 @@
 
 /* Utilities */
 body {
-  margin: 0 auto;
+  width: 1500px;
   font-family: Open Sans;
   text-align: center;
 }
@@ -44,7 +44,7 @@ a {
   background-repeat: repeat-x;
   background-color: rgb(160, 60, 30, 0.9);
   padding: 200px 0;
-  
+  width: 1500px;
 }
 .geral {
   display: flex;
@@ -165,9 +165,9 @@ a {
 }
 
 .footer {
-  padding: 20px;
+  padding: 20px 0;
   background: rgb(160, 60, 30, 0.3);
-  width: auto;
+  width: 1500px;
 }
 .links {
   margin: auto;
