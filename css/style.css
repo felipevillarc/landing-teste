@@ -29,6 +29,7 @@ a {
   text-align: end;
   justify-items: end;
   align-content: flex-end;
+  width: 0 auto;
   
 }
 .container p {
@@ -49,10 +50,12 @@ a {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  width: auto;
+  margin: 30px;
 }
 .caixa {
   text-align: center;
-  width: 500px;
+  width: auto;
   box-shadow: 10px 10px 10px 10px rgb(160, 60, 30, 0.3);
   padding: 10px;
   margin: 10px;
@@ -163,7 +166,8 @@ a {
 
 .footer {
   padding: 20px;
-  background: rgb(160, 60, 30, 0.3);;
+  background: rgb(160, 60, 30, 0.3);
+  width: auto;
 }
 .links {
   margin: auto;
