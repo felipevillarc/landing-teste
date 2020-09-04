@@ -1,0 +1,196 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+@import url('components/banner.css');
+
+/* Utilities */
+body {
+  margin: 0 auto;
+  font-family: Open Sans;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+.container {
+  color : white;
+  font-weight: lighter;
+  background-color: rgb(160, 60, 30, 0.3);
+  text-align: end;
+  justify-items: end;
+  align-content: flex-end;
+  
+}
+.container p {
+  font-size:20px;
+  font-weight: lighter;
+  background:  rgb(160, 60, 30, 0.3);
+}
+.banner {
+  background-image: url("../images/hipocrates.JPG");
+  background-size: cover;
+  background-position: top;
+  background-repeat: repeat-x;
+  background-color: rgb(160, 60, 30, 0.9);
+  padding: 200px 0;
+  
+}
+.geral {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.caixa {
+  text-align: center;
+  width: 500px;
+  box-shadow: 10px 10px 10px 10px rgb(160, 60, 30, 0.3);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  
+}
+.slide-controller:nth-child(1):checked ~ .tronco .slides-list{--selected-item: 0;}
+.slide-controller:nth-child(2):checked ~ .tronco .slides-list{--selected-item: 1;}
+.slide-controller:nth-child(3):checked ~ .tronco .slides-list{--selected-item: 2;}
+.slide-controller:nth-child(4):checked ~ .tronco .slides-list{--selected-item: 3;}
+.tronco {
+  width: 300px;
+  margin: 0 auto;
+  height: 700px;
+  text-align: center;
+  overflow: hidden;
+}
+.slides-list{
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.slides-list img {
+  width: 300px;
+  height: 500px;
+}
+
+.slide-controller2:nth-child(1):checked ~ .tronco2 .slides-list2{--selected-item: 0;}
+.slide-controller2:nth-child(2):checked ~ .tronco2 .slides-list2{--selected-item: 1;}
+.slide-controller2:nth-child(3):checked ~ .tronco2 .slides-list2{--selected-item: 2;}
+.slide-controller2:nth-child(4):checked ~ .tronco2 .slides-list2{--selected-item: 3;}
+.tronco2 {
+  width: 300px;
+  margin: o auto;
+  height: 700px;
+  text-align: center;
+  overflow: hidden;
+}
+.slides-list2{
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.slides-list2 img {
+  width: 300px;
+  height: 500px;
+}
+.slide-controller3:nth-child(1):checked ~ .tronco3 .slides-list3{--selected-item: 0;}
+.slide-controller3:nth-child(2):checked ~ .tronco3 .slides-list3{--selected-item: 1;}
+.slide-controller3:nth-child(3):checked ~ .tronco3 .slides-list3{--selected-item: 2;}
+.slide-controller3:nth-child(4):checked ~ .tronco3 .slides-list3{--selected-item: 3;}
+.tronco2 {
+  width: 300px;
+  margin: o auto;
+  height: 700px;
+  text-align: center;
+  overflow: hidden;
+}
+.slides-list3{
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.slides-list3 img {
+  width: 300px;
+  height: 500px;
+}
+.tronco3 {
+  width: 300px;
+  margin: o auto;
+  height: 700px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.footer {
+  padding: 20px;
+  background: rgb(160, 60, 30, 0.3);;
+}
+.links {
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.fab {
+  background: #3B5998;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.5;
+
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
